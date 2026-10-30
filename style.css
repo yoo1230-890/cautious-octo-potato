@@ -1,0 +1,154 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5eee5;
+    color: #333333;
+}
+
+
+.menu {
+    background-color: #945605;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu h2 {
+    color: white;
+}
+
+
+.menu h2 {
+    font-style: oblique;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.menu a:hover {
+    color: #ffd699;
+}
+
+.icerik {
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.icerik h1 {
+    color: #000000;
+}
+
+.icerik h2 {
+    color: #000000;
+}
+
+.icerik p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.icerik img {
+    width: 70%;
+    max-width: 700px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.alt {
+    background-color: #28ca07;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.İletişim {
+    width: 200%;       /* Genişlik (örneğin ekranın tamamı) */
+    height: 600px;     /* Yükseklik */
+    border: 0;         /* Çerçeveyi kaldırır */
+    border-radius: 12px; /* Köşeleri yuvarlatır (şık durur) */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Hafif gölge efekti */
+}
+
+
+.İletişim {
+    width: 100%;
+    max-width: 900px; /* Bilgisayarda çok büyümesini engeller */
+    height: 400px;    /* Haritanın yüksekliği */
+    margin: 0 auto;   /* Ortalamak için */
+}
+
+.İletişim iframe {
+    width: 100%;
+   height: 200%; 
+    border: 0;
+    border-radius: 8px;
+}
+
+
+
+.site-haritasi {
+    filter: grayscale(100%) contrast(1.2); /* Siyah-beyaz ve kontrastlı yapar */
+}
+
+
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 13px 20px;
+    background: #25D366;
+    color: #fff;
+    text-decoration: none;
+
+    border-radius: 50px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background: #1ebe5d;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.35);
+}
+
+.whatsapp-icon {
+    width: 27px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-icon svg {
+    width: 27px;
+    height: 27px;
+}
+
+.whatsapp-text {
+    white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+    .whatsapp-button {
+        bottom: 18px;
+        left: 15px;
+        padding: 12px 16px;
+        font-size: 13px;
+    }
+}
+

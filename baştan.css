@@ -1,0 +1,297 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Arial" sans-serif;
+}
+
+
+.navbar{
+  background-color: #1d1515;
+  padding: 17px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.navbar .logo {
+    font-size: 30px;
+    color: #fff;
+}
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+
+.navbar ul li a:hover {
+    color: #1a3340;
+}
+
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(resim3.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 54px;
+    color: rgb(187, 169, 7);
+    font-style: oblique;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0px;
+    color: rgb(255, 220, 19);
+}
+
+.btn {
+    color: rgb(255, 217, 0);
+    font-size: 20px;
+    font-style:oblique;
+}
+
+.navbar ul li {
+    font-style:italic;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 13px 20px;
+    background: #25D366;
+    color: #fff;
+    text-decoration: none;
+
+    border-radius: 50px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background: #1ebe5d;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.35);
+}
+
+.whatsapp-icon {
+    width: 27px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-icon svg {
+    width: 27px;
+    height: 27px;
+}
+
+.whatsapp-text {
+    white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+    .whatsapp-button {
+        bottom: 18px;
+        left: 15px;
+        padding: 12px 16px;
+        font-size: 13px;
+    }
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    padding: 30px;
+}
+
+.iletisim-kapsayici {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Üst satır */
+
+.iletisim-ust {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: #32ad48;
+}
+
+.iletisim-kart {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 20px 18px;
+    color: white;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    transition: background 0.3s;
+}
+
+.iletisim-kart:nth-child(even) {
+    background: rgba(0, 0, 0, 0.035);
+}
+
+.iletisim-kart:hover {
+    background: #258e39;
+}
+
+.iletisim-kart > i {
+    font-size: 25px;
+    min-width: 25px;
+    text-align: center;
+}
+
+.iletisim-kart h4,
+.adres-bilgisi h4 {
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.iletisim-kart p,
+.iletisim-kart a,
+.adres-bilgisi p {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* Alt satır */
+
+.iletisim-alt {
+    background: #299b3e;
+    color: white;
+    padding: 20px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.adres-bilgisi {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+}
+
+.adres-bilgisi > i {
+    font-size: 27px;
+}
+
+.sosyal-medya {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.sosyal-medya a {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: white;
+    color: #299b3e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 11px;
+    transition: all 0.3s;
+}
+
+.sosyal-medya a:hover {
+    background: #173c21;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    body {
+        padding: 15px;
+    }
+
+    .iletisim-ust {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .iletisim-alt {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sosyal-medya {
+        align-self: flex-end;
+    }
+}
+
+/* Telefon */
+
+@media (max-width: 500px) {
+    .iletisim-ust {
+        grid-template-columns: 1fr;
+    }
+
+    .iletisim-kart {
+        padding: 16px;
+    }
+
+    .iletisim-alt {
+        padding: 20px 16px;
+    }
+
+    .adres-bilgisi {
+        align-items: flex-start;
+    }
+
+    .adres-bilgisi p {
+        overflow-wrap: anywhere;
+    }
+
+    .sosyal-medya {
+        align-self: flex-start;
+    }
+}
